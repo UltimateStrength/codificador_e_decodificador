@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Codificador/Decodificador</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/981959106283831356/1109998854402736148/terminal.png">
+</head>
+<body>
+  <h1>Codificador/Decodificador</h1>
+
+  <textarea id="textInput" placeholder="Digite o texto"></textarea>
+
+  <div class="other">
+  <button class="custom-button" onclick="translateText()">Traduzir</button>
+  </div>
+
+  <div class="output-container">
+    <label for="textOutput">Texto traduzido:</label>
+    <div id="textOutput"></div>
+  </div>
+  
+  <div class="select-style">
+    <select id="translationType">
+      <option value="binary">Binário</option>
+      <option value="morse">Morse</option>
+      <option value="ascii">ASCII</option>
+      <option value="hex">Hexadecimal</option>
+    </select>
+  </div>
+
+  <div class="select-style">
+    <select id="operationType">
+      <option value="encode">Codificar</option>
+      <option value="decode">Decodificar</option>
+    </select>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
